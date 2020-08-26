@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>  Math Functions </h1>
+<p>Input two integers to see a few math equations.</p>
+<p>The first number will be the sum, then the product, then the sum multiplied by 3</p>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+
+<script>
+function myFunction()
+{
+  var a = prompt("Please enter a number", "");
+  var num1 = parseInt(a);
+
+  var b = prompt("Please enter a second number", "");
+  var num2 = parseInt(b);
+  var sum = num1 + num2;
+  var product = num1 * num2;
+  var triplesum = sum * 3;
+
+document.getElementById("demo").innerHTML = sum;
+document.getElementById("demo1").innerHTML = product;
+document.getElementById("demo2").innerHTML = triplesum;
+}
+
+
+
+
+</script>
+
+</body>
+</html>
