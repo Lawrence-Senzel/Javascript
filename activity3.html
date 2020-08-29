@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>  Reverse String </h1>
+<p>Enter any text and watch as it's flipped.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+
+
+<script>
+function myFunction()
+{
+    var a = prompt("Please enter a word or sentence.", "");
+
+    function reverseString(str) {
+
+        var splitString = str.split("");
+        // ["h", "e", "l", "l", "o"]
+
+
+        var reverseArray = splitString.reverse();
+
+        //
+        var joinArray = reverseArray.join("");
+
+
+        return joinArray;
+    }
+
+
+    document.getElementById("demo").innerHTML = reverseString(a);
+}
+
+
+
+</script>
+
+</body>
+</html>
