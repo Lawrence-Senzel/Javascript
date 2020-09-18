@@ -27,7 +27,8 @@
         </tr>
         </table>
       </form>
-         <p id="demo"></p>
+         <div id =demo style = "width 600px;">
+           </div>
 
 
 
@@ -42,9 +43,9 @@
 
       document.getElementById("demo").innerHTML = area;
       document.getElementById("myform").style.display="none";
-      document.getElementById("demo").onmouseover = function() {mouseOver()};
+
       document.getElementById("instructions").innerHTML = "The area is: ";
-      document.getElementById("demo").style.border = "thick solid black";
+      document.getElementById("demo").style.border = "thin solid black";
 
       document.body.style.backgroundColor = "lightgreen";
 
@@ -57,19 +58,9 @@
 
 
 
-      document.getElementById("myTable").onmouseout = function() {mouseOut()};
 
-      function mouseOver()
-      {
-        document.getElementById("myTable").style.color = "red";
-        document.getElementById("myTable").style.fontWeight = "bolder";
-      }
-      function mouseOut()
-      {
-      document.getElementById("myTable").style.color = "black";
-      document.getElementById("myTable").style.fontWeight = "normal";
 
-      }
+
     }
 
     </script>
